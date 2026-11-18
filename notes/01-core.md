@@ -1,0 +1,26 @@
+# Count words: implementation
+
+## What the example does
+
+This tokenizer recognizes Unicode word characters and excludes underscores. It is suitable for simple prose, not linguistic segmentation of all writing systems.
+
+The public function is `solve(value)`. The JSON input contract can be seen in this concrete example:
+
+```json
+"Red red blue."
+```
+
+Expected result:
+
+```json
+{
+  "red": 2,
+  "blue": 1
+}
+```
+
+Run `python3 example.py` for the Python representation of the result. `solution.py` contains the full implementation and can also be imported by another script.
+
+## Scope
+
+The function implements exactly the behavior described above. It does not perform network or filesystem access. Python exceptions indicate unsupported input; the next lesson turns them into a command-line error response. Review the limitations before reusing it in an application.
